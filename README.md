@@ -3,7 +3,7 @@
 
 **Tech Stack:** PostgreSQL · SQL · Power BI · DAX  
 **Dataset:** UK Online Retail (541K+ transactions, Dec 2010 – Dec 2011)  
-**Project Type:** Portfolio — Data Analyst 
+**Project Type:** Portfolio — Data Analyst
 
 ---
 
