@@ -155,6 +155,9 @@ Global revenue map · AOV by country · Top customer per country · Internationa
 - Data Visualization
 
 ---
+## Repository Structure
+
+```text
 ecommerce-analytics-dashboard/
 │
 ├── dashboard/
@@ -164,21 +167,28 @@ ecommerce-analytics-dashboard/
 │   ├── PRODUCT.png
 │   ├── CUSTOMER.png
 │   ├── CHURN.png
-│   └── GEOGRAPHICAL.png/
+│   └── GEOGRAPHICAL.png
 │
 ├── data/
-│   └── rfm_segments.csv/
+│   ├── rfm
+│   └── rfm_segments.csv
 │
 ├── sql/
-│   ├── Staging & Profiling
-│   ├── Dimension & Fact Tables
-│   ├── Revenue Analysis
-│   ├── Product Analysis
-│   ├── Customer RFM
-│   ├── Churn Analysis
-│   └── Window Functions/
+│   ├── 01_stagging_table.sql
+│   ├── Data Profiling for Stagging table.sql
+│   ├── Dimension tables-dim_products new.sql
+│   ├── Dimension tables-dim_customers new.sql
+│   ├── Dimension tables-dim_dates new.sql
+│   ├── Dimension tables-dim_budget.sql
+│   ├── Fact tables-fact_orders invoice_month column added.sql
+│   ├── 03_revenue_trends.sql
+│   ├── 04_product_analysis.sql
+│   ├── 05_customer_rfm.sql
+│   ├── 06_churn_analysis.sql
+│   └── 07_window_functions.sql
 │
 └── README.md
+```
 ---
 ## How to Run
 
