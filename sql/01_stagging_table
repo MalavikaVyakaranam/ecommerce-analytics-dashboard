@@ -1,0 +1,10 @@
+CREATE TABLE staging_orders (
+    invoice_no    VARCHAR(20),
+    stock_code    VARCHAR(20),
+    description   VARCHAR(300),
+    quantity      INTEGER,
+    invoice_date  TIMESTAMP,
+    unit_price    DECIMAL(10,2),
+    customer_id   VARCHAR(20),
+    country       VARCHAR(50)
+);
