@@ -164,10 +164,10 @@ ecommerce-analytics-dashboard/
 │   ├── PRODUCT.png
 │   ├── CUSTOMER.png
 │   ├── CHURN.png
-│   └── GEOGRAPHICAL.png
+│   └── GEOGRAPHICAL.png/
 │
 ├── data/
-│   └── rfm_segments.csv
+│   └── rfm_segments.csv/
 │
 ├── sql/
 │   ├── Staging & Profiling
@@ -176,7 +176,7 @@ ecommerce-analytics-dashboard/
 │   ├── Product Analysis
 │   ├── Customer RFM
 │   ├── Churn Analysis
-│   └── Window Functions
+│   └── Window Functions/
 │
 └── README.md
 ---
