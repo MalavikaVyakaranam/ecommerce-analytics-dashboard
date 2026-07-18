@@ -133,17 +133,7 @@ Global revenue map · AOV by country · Top customer per country
 
 ---
 
-## How to Run
 
-1. Clone this repository
-2. Set up PostgreSQL — run SQL files in `sql/` folder in numbered order
-3. Download dataset: [UCI Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
-4. Load CSV into `staging_orders` table (fix date format — see `01_staging_table.sql`)
-5. Open Power BI Desktop → connect to your PostgreSQL instance
-6. Load `data/rfm_output.csv` as `rfm_segments` table
-7. Recreate relationships per star schema above
 
 ---
 
-*Built as part of a career transition from IT Support (4+ years) to Data Analyst.*  
-*Targeting mid-to-senior Data Analyst roles (₹12–20 LPA).*
