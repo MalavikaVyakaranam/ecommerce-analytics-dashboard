@@ -9,12 +9,7 @@
 
 ## Project Summary
 
-Built a complete end-to-end analytics solution for a UK-based online gift retailer
-with no existing structured reporting. Loaded and cleaned 541K raw transactions in
-PostgreSQL, designed a star schema data model, wrote 13 business SQL queries, and
-delivered a 5-page interactive Power BI dashboard with advanced DAX measures,
-drill-throughs, AI visuals, and business recommendation panels — targeting actionable
-decisions for Sales, Marketing, Operations, Customer Success, and Finance teams.
+Built an end-to-end analytics solution for a UK-based online gift retailer with no existing structured reporting. Loaded and cleaned 541K+ raw transactions in PostgreSQL, designed a dimensional star schema, developed 16 SQL modules for business analysis, and built a 5-page interactive Power BI dashboard featuring advanced DAX measures, custom tooltips, drill-through navigation, AI visuals, and business recommendation panels for Sales, Marketing, Operations, Customer Success, and Finance teams.
 
 ---
 
@@ -39,9 +34,22 @@ decisions for Sales, Marketing, Operations, Customer Success, and Finance teams.
 
 ## Data Model — Star Schema
 
+The analytical data model follows a star schema optimized for reporting and dashboard performance.
+
+**Fact Table**
+- fact_orders
+
+**Dimension Tables**
+- dim_products
+- dim_customers
+- dim_date
+- dim_budget
+
+**Derived Analytical Table**
+- rfm_segments
 ---
 
-## SQL Queries (16 files)
+##SQL Analysis Modules(16)
 
 | # | Query | Concepts Used |
 |---|-------|---------------|
@@ -60,7 +68,7 @@ decisions for Sales, Marketing, Operations, Customer Success, and Finance teams.
 
 ---
 
-## Dashboard — 5 Pages
+## Interactive Power BI Dashboard — 5 Pages
 
 ### Page 1 — Revenue Overview
 KPI cards · Monthly trend · Revenue YTD · Budget vs Actual · YoY comparison  
@@ -81,8 +89,9 @@ Churn status donut · Revenue at risk · Churn by buyer type
 *Dynamic revenue-at-risk text · One-time buyer churn ratio insight*
 
 ### Page 5 — Geographic Insights
-Global revenue map · AOV by country · Top customer per country  
+Global revenue map · AOV by country · Top customer per country · International revenue distribution and market opportunity analysis
 *EIRE vs Australia/Netherlands strategic insight*
+
 
 ---
 
@@ -116,8 +125,8 @@ Global revenue map · AOV by country · Top customer per country
 | Win-Back Priority Score | Page 4 — recency-weighted action queue |
 | Country→Segment Matrix | Page 3 — hierarchical drill-down |
 | Dynamic DAX insight text | All 5 pages — recalculates with slicer |
-| Business Recommendation Panel | All 5 pages — actionable bullets |
-| Edit interactions (Highlight) | All 5 pages |
+| Dynamic Business Recommendation Panels | All 5 pages — actionable bullets |
+| Cross-filtering & Edit Interactions (Highlight) | All 5 pages |
 
 ---
 
@@ -131,9 +140,52 @@ Global revenue map · AOV by country · Top customer per country
 | Customer Success | No churn early-warning | Key Influencers + Win-Back Priority Queue |
 | Finance Team | Manual Excel budget tracking | Budget vs Actual variance dashboard |
 
----
-
-
 
 ---
+## Technologies Used
 
+- PostgreSQL
+- SQL
+- Power BI Desktop
+- DAX
+- Power Query
+- Data Modeling
+- Star Schema
+- ETL
+- Data Visualization
+
+---
+ecommerce-analytics-dashboard/
+│
+├── dashboard/
+│   ├── Ecommerce Dashboard.pbix
+│   ├── Ecommerce Dashboard.pdf
+│   ├── REVENUE.PNG
+│   ├── PRODUCT.png
+│   ├── CUSTOMER.png
+│   ├── CHURN.png
+│   └── GEOGRAPHICAL.png
+│
+├── data/
+│   └── rfm_segments.csv
+│
+├── sql/
+│   ├── Staging & Profiling
+│   ├── Dimension & Fact Tables
+│   ├── Revenue Analysis
+│   ├── Product Analysis
+│   ├── Customer RFM
+│   ├── Churn Analysis
+│   └── Window Functions
+│
+└── README.md
+---
+## How to Run
+
+1. Clone the repository.
+2. Execute the SQL scripts in PostgreSQL to prepare the analytical data model.
+3. Open the Power BI report (`Ecommerce Dashboard.pbix`).
+4. Refresh the data model if required.
+5. Explore the interactive dashboard using slicers, drill-through pages, and custom tooltips.
+> **Note:** The repository includes the complete Power BI (.pbix) file, allowing users to explore interactive features such as drill-through navigation, custom tooltips, cross-filtering, AI visuals, and dynamic DAX calculations.
+----
