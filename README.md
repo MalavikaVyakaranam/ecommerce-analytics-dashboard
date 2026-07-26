@@ -38,7 +38,7 @@ The dashboard is built on a dimensional **Star Schema** to ensure efficient quer
 
 ### Model Overview
 
-![Star Schema Data Model](dashboard/data_model.png))
+![Star Schema Data Model](dashboard/data_model.png)
 
 ### Tables
 
