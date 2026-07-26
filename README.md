@@ -64,7 +64,7 @@ The dashboard is built on a dimensional **Star Schema** to ensure efficient quer
 
 ---
 
-##SQL Analysis Modules (16)
+## SQL Analysis Modules (16)
 
 | # | Query | Concepts Used |
 |---|-------|---------------|
