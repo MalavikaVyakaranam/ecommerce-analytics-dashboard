@@ -32,22 +32,35 @@ Built an end-to-end analytics solution for a UK-based online gift retailer with 
 
 ---
 
-## Data Model — Star Schema
+## Data Model (Star Schema)
 
-The analytical data model follows a star schema optimized for reporting and dashboard performance.
+The dashboard is built on a dimensional **Star Schema** to ensure efficient querying, simplified relationships, and optimized Power BI performance.
 
-**Fact Table**
-- fact_orders
+### Model Overview
 
-**Dimension Tables**
-- dim_products
-- dim_customers
-- dim_date
-- dim_budget
+![Star Schema Data Model](dashboard/data_model.png))
 
-**Derived Analytical Table**
-- rfm_segments
----
+### Tables
+
+#### Fact Table
+- **fact_orders** – Stores transactional sales data, including invoice details, products, customers, quantity, revenue, and order metrics.
+
+#### Dimension Tables
+- **dim_products** – Product details.
+- **dim_customers** – Customer information and first purchase details.
+- **dim_date** – Calendar hierarchy for time-based analysis.
+- **dim_budget** – Monthly budget targets for Budget vs Actual analysis.
+
+#### Analytical Table
+- **rfm_segments** – Stores Recency, Frequency, and Monetary (RFM) segmentation along with buyer type and churn status.
+
+### Design Benefits
+
+- ⭐ Optimized Star Schema for Power BI reporting
+- ⭐ One-to-Many relationships between dimension and fact tables
+- ⭐ Reduced data redundancy
+- ⭐ Improved query and dashboard performance
+- ⭐ Supports Time Intelligence, Budget vs Actual, RFM Segmentation, and Churn Analysis
 
 ##SQL Analysis Modules(16)
 
