@@ -62,7 +62,9 @@ The dashboard is built on a dimensional **Star Schema** to ensure efficient quer
 - ⭐ Improved query and dashboard performance
 - ⭐ Supports Time Intelligence, Budget vs Actual, RFM Segmentation, and Churn Analysis
 
-##SQL Analysis Modules(16)
+---
+
+##SQL Analysis Modules (16)
 
 | # | Query | Concepts Used |
 |---|-------|---------------|
@@ -160,8 +162,8 @@ Global revenue map · AOV by country · Top customer per country · Internationa
 - PostgreSQL
 - SQL
 - Power BI Desktop
-- DAX
 - Power Query
+- DAX
 - Data Modeling
 - Star Schema
 - ETL
@@ -176,6 +178,7 @@ ecommerce-analytics-dashboard/
 ├── dashboard/
 │   ├── Ecommerce Dashboard.pbix
 │   ├── Ecommerce Dashboard.pdf
+│   ├── data_model.png
 │   ├── REVENUE.PNG
 │   ├── PRODUCT.png
 │   ├── CUSTOMER.png
